@@ -100,8 +100,7 @@ function App() {
       <div className="fourth-component p-8 ">
         <h3 className="text-xl font-semibold tracking-wider">About Me</h3>
         <div className="fourth-component-text border-2 border-gray-800 mt-5">
-          <h2 className="text-3xl font-bold p-10">Get to know me better .</h2>
-          {/* <hr className="border border-gray-800"/> */}
+          <h2 className="text-3xl font-bold p-8">Get to know me better.</h2>
           <div className="main-bottom-area flex h-32 border-t-2 border-b-2 border-gray-800 ">
           <div className="inner-text flex items-center p-8  border-gray-800 ">
             <img className="rounded-full" src={photo1} alt="img" width="100px" hight="100px" />
@@ -119,7 +118,28 @@ function App() {
         </div>
       </div>
 
+      <div className="fifth-component p-8">
+        <h3 className="text-xl font-semibold tracking-wider">TECNOLOGIES</h3>
+        <div className="fifth-component-main border-2 border-gray-800  mt-5">
+          <h2 className="fifth-component-text border-b-2 border-gray-800 text-3xl font-bold p-8">
+            Check out what I'm good at. 
+          </h2>
+          <div className="fifth-component-text grid grid-rows-2 grid-flow-col  justify-around">
+            <div className="text-xl font-bold ">HTML</div>
+            <div className="text-xl font-bold ">CSS</div>
+            <div className="text-xl font-bold ">JavaScript</div>
+            <div className="text-xl font-bold ">
+            <div>hello</div>
+            TypeScript
+            </div>
+            <div className="text-xl font-bold ">React</div>
+            <div className="text-xl font-bold ">Redux</div>
+            <div className="text-xl font-bold ">Tailwind</div>
+            <div className="text-xl font-bold ">Github</div>
 
+            </div>
+        </div>
+      </div>
 
     </div>
   );
