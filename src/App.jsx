@@ -9,6 +9,7 @@ import typescript from "../assets/typescript.png";
 import tailwind from "../assets/tailwind.png";
 import redux1 from "../assets/redux1.jpg";
 import github1 from "../assets/github1.png";
+import prettier from "../assets/prettier2.png";
 
 function App() {
   return (
@@ -188,8 +189,21 @@ function App() {
                 <p className="text-lg font-bold">GitHub</p>
               </div>
             </div>
-            <div>
-              
+            {/* <div >
+
+            </div> */}
+          </div>
+        </div>
+      </div>
+      <div className="sixth_component_project p-8">
+        <h3 className="text-xl font-semibold tracking-wider ">PROJECTS</h3>
+        <div className="sixth_component_project_main border-2 border-gray-800 mt-5 ">
+          <h2 className="sixth_component_project_text border-b-2 border-gray-800 text-3xl font-bold p-8">
+           Take a look what I've been working on.
+          </h2>
+          <div className="sixth_component_project_images">
+            <div className="image">
+              <img src={prettier} alt="" />
             </div>
           </div>
         </div>
