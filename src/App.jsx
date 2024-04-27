@@ -1,12 +1,22 @@
 import "./App.css";
 import { Button, Flex } from "antd";
 import photo1 from "../assets/photo1.jpg";
+import react_icon2 from "../assets/react-icon-2.png";
+import html from "../assets/html.png";
+import css from "../assets/css.jpg";
+import js from "../assets/js.png";
+import typescript from "../assets/typescript.png";
+import tailwind from "../assets/tailwind.png";
+import redux1 from "../assets/redux1.jpg";
+import github1 from "../assets/github1.png";
 
 function App() {
   return (
     <div className="main">
       <div className="upper-component flex justify-between p-4 px-8">
-        <Button type="link" className="text-black">Link</Button>
+        <Button type="link" className="text-black">
+          Link
+        </Button>
         <Flex>
           <Button type="primary" className="bg-black">
             Say Hello
@@ -18,7 +28,7 @@ function App() {
           <p className="text-base font-normal leading-8">Hi! My name is</p>
           <h2 className="text-7xl font-extrabold">Yaswant Gurjar</h2>
           <p className="text-xl leading-8">
-            I'm a <span className="font-bold"> Frontend Developer </span>
+            I'm a <span className="font-bold"> Frontend Web Developer </span>
           </p>
         </div>
         <div className="second  border-green-500">
@@ -102,19 +112,36 @@ function App() {
         <div className="fourth-component-text border-2 border-gray-800 mt-5">
           <h2 className="text-3xl font-bold p-8">Get to know me better.</h2>
           <div className="main-bottom-area flex h-32 border-t-2 border-b-2 border-gray-800 ">
-          <div className="inner-text flex items-center p-8  border-gray-800 ">
-            <img className="rounded-full" src={photo1} alt="img" width="100px" hight="100px" />
-            <h3 className="text-3xl font-bold p-3">Yashwant Gurjar</h3>
+            <div className="inner-text flex items-center p-8  border-gray-800 ">
+              <img
+                className="rounded-full"
+                src={photo1}
+                alt="img"
+                width="100px"
+                hight="100px"
+              />
+              <h3 className="text-3xl font-bold p-3">Yashwant Gurjar</h3>
             </div>
             <div className="border-l-2 border-gray-800 text-xl font-semibold  p-12">
               Liked by you and 6 others
             </div>
-            </div>
-            <div className="main-end-area">
-              <p className="text-sm font-medium p-10 break-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem quod eius aut eum? Inventore magni vero, officiis atque nisi velit eos minima repudiandae eum. Similique est amet voluptas quaerat assumenda quam, exercitationem omnis dolore maxime aspernatur laudantium in blanditiis dolorem aperiam cumque atque sed numquam distinctio nulla adipisci? Dignissimos esse saepe quaerat iure unde quia incidunt illum animi odit explicabo quibusdam voluptates accusantium cupiditate fugiat officia porro, perspiciatis tenetur ex consequuntur, sunt deserunt deleniti cum. Enim impedit harum odio quo minus nemo quas? Officia ea et suscipit cum, deserunt velit nesciunt adipisci rerum ullam repellendus quas totam non asperiores vero, delectus veniam quae quia, neque voluptatum facere distinctio? Aperiam distinctio, aspernatur amet illum nam quia quas velit quo sunt consectetur dolorem assumenda minus cupiditate accusamus voluptatum dignissimos expedita praesentium fugiat, quaerat tempore aliquam. Sit, natus quasi ea laborum neque cupiditate tenetur temporibus consequuntur cum architecto veritatis ducimus nulla est.
-              </p>
-
-            </div>
+          </div>
+          <div className="main-end-area">
+            <p className="text-lg font-medium p-10 break-all">
+              Passionate about the realm of technology, I am a results-driven
+              Front-end software developer with a solid background in frontend
+              development. Proficient in languages such as JavaScript and
+              currently expanding my skills with TypeScript, I also possess
+              framework knowledge in React.js and Tailwind.css. My focus lies in
+              crafting robust and scalable applications that tackle complex
+              issues while delivering exceptional user experiences. I am deeply
+              passionate about developing new products with a strong focus on
+              utilizing effective technology. I am proficient in conducting
+              thorough research and possess some knowledge of marketing
+              strategies. I find great satisfaction in conceptualizing and
+              creating products, and I am committed to ensuring their success.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -122,25 +149,51 @@ function App() {
         <h3 className="text-xl font-semibold tracking-wider">TECNOLOGIES</h3>
         <div className="fifth-component-main border-2 border-gray-800  mt-5">
           <h2 className="fifth-component-text border-b-2 border-gray-800 text-3xl font-bold p-8">
-            Check out what I'm good at. 
+            Check out what I'm good at.
           </h2>
-          <div className="fifth-component-text grid grid-rows-2 grid-flow-col  justify-around">
-            <div className="text-xl font-bold ">HTML</div>
-            <div className="text-xl font-bold ">CSS</div>
-            <div className="text-xl font-bold ">JavaScript</div>
-            <div className="text-xl font-bold ">
-            <div>hello</div>
-            TypeScript
+          <div className="fifth-component-images m-5">
+            <div className="first_components_tech flex justify-around items-center">
+              <div className="flex flex-col items-center">
+                <img src={html} alt="_" width="100px" hight="100px" />
+                <p className="text-lg font-bold">HTML</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={css} alt="_" width="100px" hight="100px" />
+                <p className="text-lg font-bold">CSS</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={js} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold">JS</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={typescript} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold">TS</p>
+              </div>
             </div>
-            <div className="text-xl font-bold ">React</div>
-            <div className="text-xl font-bold ">Redux</div>
-            <div className="text-xl font-bold ">Tailwind</div>
-            <div className="text-xl font-bold ">Github</div>
-
+            <div className="second_components_tech flex justify-around items-center pt-8">
+              <div className="flex flex-col items-center">
+                <img src={react_icon2} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold">React</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={tailwind} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold pt-8">Tailwind</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={redux1} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold">Redux</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src={github1} alt="" width="100px" hight="100px" />
+                <p className="text-lg font-bold">GitHub</p>
+              </div>
             </div>
+            <div>
+              
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   );
 }
