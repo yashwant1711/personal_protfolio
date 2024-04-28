@@ -5,7 +5,7 @@ import photo1 from "../../assets/photo1.jpg";
 function Aboutme() {
   return (
     <div>
-      <div className="fourth-component p-8 ">
+      <div className="fourth-component p-10 ">
         <h3 className="text-xl font-semibold tracking-wider">About Me</h3>
         <div className="fourth-component-text border-2 border-gray-800 mt-5">
           <h2 className="text-3xl font-bold p-8">Get to know me better.</h2>

@@ -1,20 +1,13 @@
-import "./App.css";
+import React from 'react'
 import { Button, Flex } from "antd";
-
-import Firstsection from "./components/Firstsection";
-import Aboutme from "./components/Aboutme";
-import Technologies from "./components/Technologies";
-import Project from "./components/Project";
-
-function App() {
+import prettier from "../../assets/prettier2.png";
+import project1 from "../../assets/project1img.png";
+import project2 from "../../assets/project2.png";
+import project3 from "../../assets/project3.png";
+function Project() {
   return (
-    <div className="main">
-     <Firstsection/>
-      <Aboutme/>
-     <Technologies/>
-    <Project/>
-      
-      {/* <div className="sixth_component_project p-8">
+    <div>
+       <div className="sixth_component_project p-8">
         <h3 className="text-xl font-semibold tracking-wider ">PROJECTS</h3>
         <div className="sixth_component_project_main border-2 border-gray-800 mt-5 ">
           <h2 className="sixth_component_project_text border-b-2 border-gray-800 text-3xl font-bold p-8">
@@ -97,9 +90,9 @@ function App() {
           </div>
           
         </div>
-      </div> */}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Project

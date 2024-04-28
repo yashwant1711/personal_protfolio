@@ -8,12 +8,11 @@ import redux1 from "../../assets/redux1.jpg";
 import github1 from "../../assets/github1.png";
 import react_icon2 from "../../assets/react-icon-2.png";
 
-// import {prettier} from "../../assets/prettier2.png";
 
 function Technologies() {
   return (
     <div>
-      <div className="fifth-component p-8">
+      <div className="fifth-component p-10">
         <h3 className="text-xl font-semibold tracking-wider">TECNOLOGIES</h3>
         <div className="fifth-component-main border-2 border-gray-800  mt-5">
           <h2 className="fifth-component-text border-b-2 border-gray-800 text-3xl font-bold p-8">
