@@ -7,11 +7,11 @@ function Firstsection() {
   return (
     <div>
       <div className="upper-component flex justify-between p-4 px-8">
-        <Button type="link" className="text-black">
-          Link
+        <Button type="link" className="text-black text-xl">
+          Resume
         </Button>
         <Flex>
-          <Button type="primary" className="bg-black">
+          <Button type="primary" className="bg-black text-xl pb-8 ">
             Say Hello
           </Button>
         </Flex>

@@ -24,7 +24,7 @@ function Contact() {
               </div>
                 <div className="email_section_form flex items-center justify-between p-4 ">
                   <p className="mr-5">Email</p>
-                  <Input className="border-2 border-gray-800" />
+                  <Input className="border-2 border-gray-800" type="email" />
                 </div>
                 <div className="subject_section_form flex items-center justify-between p-4">
                   <p className="mr-5">Subject</p>
@@ -35,7 +35,7 @@ function Contact() {
                 </div>
                 <div className="form_button w-full flex justify-end items-center p-4">
                 <Flex>
-                <Button  className="bg-pink-300 text-xl font-bold text-black border-2 border-black border-r-0 ">
+                <Button  className="bg-pink-300 text-xl font-bold text-black border-2 border-black  py-0 ">
                   Let's talk!
                 </Button>
                </Flex>
