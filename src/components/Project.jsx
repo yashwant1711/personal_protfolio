@@ -28,11 +28,11 @@ function Project() {
               Calacs
             </h2>
             <div className="buttons flex items-center">
-              <Button type="link" className="text-black">
+              <Button type="link" className="text-black text-xl">
                 code
               </Button>
               <Flex>
-                <Button type="primary" className="bg-black">
+                <Button type="primary" className="bg-black text-xl px-5 py-0.5">
                   Visit
                 </Button>
               </Flex>
@@ -51,11 +51,11 @@ function Project() {
               Response.AI
             </h2>
             <div className="buttons flex items-center">
-              <Button type="link" className="text-black">
+              <Button type="link" className="text-black text-xl">
                 code
               </Button>
               <Flex>
-                <Button type="primary" className="bg-black">
+                <Button type="primary" className="bg-black text-xl px-5 py-0.5">
                   Visit
                 </Button>
               </Flex>
@@ -75,11 +75,11 @@ function Project() {
               Personal Portfolio
             </h2>
             <div className="buttons flex items-center ">
-              <Button type="link" className="text-black ">
+              <Button type="link" className="text-black text-xl">
                 code
               </Button>
               <Flex>
-                <Button type="primary" className="bg-black ">
+                <Button type="primary" className="bg-black  text-xl px-5 py-0.5">
                   Visit
                 </Button>
               </Flex>
