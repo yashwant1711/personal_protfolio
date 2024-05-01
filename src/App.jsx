@@ -1,6 +1,4 @@
 import "./App.css";
-import { Button, Flex } from "antd";
-
 import Firstsection from "./components/Firstsection";
 import Aboutme from "./components/Aboutme";
 import Technologies from "./components/Technologies";
