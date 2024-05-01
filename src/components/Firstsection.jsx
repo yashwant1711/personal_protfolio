@@ -4,14 +4,16 @@ import photo1 from "../../assets/photo1.jpg";
 
 
 function Firstsection() {
+ 
   return (
     <div>
       <div className="upper-component flex justify-between p-4 px-8">
-        <Button type="link" className="text-black text-xl">
+        <Button type="link" className="text-black text-xl" onClick={() => window.open("https://drive.google.com/file/d/1akEpixS1rLXW2AyT11CF_u8fgoDEDEVo/view?usp=drive_link")}>
           Resume
+          
         </Button>
         <Flex>
-          <Button type="primary" className="bg-black text-xl pb-8 ">
+          <Button type="primary" className="bg-black text-xl pb-8" onClick={() => window.open("https://noteforms.com/forms/form-data-vumqmv")}>
             Say Hello
           </Button>
         </Flex>
@@ -23,6 +25,7 @@ function Firstsection() {
           <p className="text-xl leading-8">
             I'm a <span className="font-bold"> Frontend Web Developer </span>
           </p>
+          <p className="text-xl font-semibold">gurjaryash00@gmail.com</p>
         </div>
         <div className="second  border-green-500">
           <img
