@@ -40,7 +40,7 @@ function Firstsection() {
         <div className="inline-flex items-center justify-center w-full">
           <hr className="w-10/12 h-1 my-8  border-0 rounded bg-gray-700" />
           <div className=" absolute px-5 -translate-x-1/2 bg-white left-1/2 flex justify-center items-center">
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.instagram.com/yashgurjar1711?igsh=eWIyNTZpc28yOGV3" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
