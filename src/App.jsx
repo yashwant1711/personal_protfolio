@@ -8,10 +8,10 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="main">
-      <Firstsection />
+       <Firstsection />
       <Aboutme />
       <Technologies />
-      <Project />
+      <Project /> 
       <Contact/>
     </div>
   );
