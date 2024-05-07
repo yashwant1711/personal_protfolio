@@ -24,10 +24,6 @@ function Contact() {
     // const templateId = "Your template id";
     // const publicKey = "Your public key";
 
-    const serviceId = "service_p6gyarb";
-    const templateId = "template_zc7prmv";
-    const publicKey = "sCGQAFWn_4Ofm2xSV";
-
     // // creating a new object that contains dynamic template
 
     const templaParams = {
