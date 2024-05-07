@@ -24,6 +24,8 @@ function Contact() {
     // const templateId = "Your template id";
     // const publicKey = "Your public key";
 
+    
+
     // // creating a new object that contains dynamic template
 
     const templaParams = {
