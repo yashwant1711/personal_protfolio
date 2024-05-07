@@ -1,94 +1,125 @@
 import React from "react";
 import photo from "../../assets/formimage.png";
-import { Input } from "@nextui-org/input";
+import {Input} from "@nextui-org/input";
 import { Textarea } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import emailjs from "@emailjs/browser";
+import { message } from 'antd';
+
+
 
 function Contact() {
+  const [messageApi, contextHolder] = message.useMessage();
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'This is a success message',
+    });
+  };
+  const error = () => {
+    messageApi.open({
+      type: 'error',
+      content: 'Please fill all the fields',
+    });
+  };
+
+  const warning = () => {
+    messageApi.open({
+      type: 'warning',
+      content: 'This is a warning message',
+    });
+  }
   const [sendName, setSendName] = React.useState("");
   const [sendEmail, setSendEmail] = React.useState("");
   const [sentSubject, setSentSubject] = React.useState("");
   const [sendMsg, setSendMsg] = React.useState("");
+  const [sucess, setSuccess] = React.useState(false);
 
   const handelClick = (e) => {
+  
     e.preventDefault();
 
-    // if (!sendName || !sendEmail || !sentSubject || !sendMsg) return ;
+    if (!sendName || !sendEmail || !sentSubject || !sendMsg) return error();
 
-    // if (!sendEmail.includes("@")) return warning();
-    // console.log(sendName, sendEmail, sentSubject, sendMsg);
+    if (!sendEmail.includes("@")) return warning();
+    console.log(sendName, sendEmail, sentSubject, sendMsg);
+    setSuccess((val) => !val);
+  
 
     // storing emial public key
-    // const serviceId = "Your service id";
-    // const templateId = "Your template id";
-    // const publicKey = "Your public key";
-
-    
+    const serviceId = "Your service id";
+    const templateId = "Your template id";
+    const publicKey = "Your public key";
 
     // // creating a new object that contains dynamic template
 
-    const templaParams = {
-      from_name: sendName,
-      from_email: sendEmail,
-      to_name: "Yashwant",
-      subject: sentSubject,
-      message: sendMsg,
-    };
+    // const templaParams = {
+    //   from_name: sendName,
+    //   from_email: sendEmail,
+    //   to_name: "Yashwant",
+    //   subject: sentSubject,
+    //   message: sendMsg,
+    // };
 
     // // sending email
 
-    emailjs
-      .send(serviceId, templateId, templaParams, publicKey)
-      .then((res) => {
-        console.log("email sent", res.status, res.text);
-        setSendName(" ");
-        setSendEmail(" ");
-        setSentSubject(" ");
-        setSendMsg(" ");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // emailjs
+    //   .send(serviceId, templateId, templaParams, publicKey)
+    //   .then((res) => {
+    //     console.log("email sent", res.status, res.text);
+    //     setSendName(" ");
+    //     setSendEmail(" ");
+    //     setSentSubject(" ");
+    //     setSendMsg(" ");
+    //     setSuccess(true);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
   return (
-    <div className="m-2 md:m-8 xl:m-10 md:p-10">
-      <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
-        Contact
-      </h3>
-      <div className="xl:flex xl:justify-around xl:items-center md:p-5">
-        <div className="md:text-center">
-          <h1 className="text-5xl font-extrabold">Let's create</h1>
-          <h1 className="text-5xl font-extrabold">something</h1>
-          <h1 className="text-5xl font-extrabold">together</h1>
-          <img src={photo} alt="_" className="mt-4" />
-        </div>
-        <div className="mt-4 border-2 border-gray-800 xl:p-5 xl:w-1/3 xl:shadow-[10px_10px_0px_0px_rgba(0,0,0)] xl:m-5 ">
+    <>
+      <div className="m-2 md:m-8 xl:m-10 md:p-10">
+        <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
+          Contact
+        </h3>
+        <div className="xl:flex xl:justify-around xl:items-center md:p-5">
+          <div className="md:text-center">
+            <h1 className="text-5xl font-extrabold">Let's create</h1>
+            <h1 className="text-5xl font-extrabold">something</h1>
+            <h1 className="text-5xl font-extrabold">together</h1>
+            <img src={photo} alt="_" className="mt-4" />
+          </div>
+          <div className="mt-4 border-2 border-gray-800 xl:p-5 xl:w-1/3 xl:shadow-[10px_10px_0px_0px_rgba(0,0,0)] xl:m-5 ">
           <form>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 items-center">
+              <p>Name</p>
               <Input
                 type="text"
-                label="Name"
+                // label="Name"
                 size="lg"
                 className="border-2 border-gray-800 m-2 font-bold lg"
                 value={sendName}
                 onChange={(e) => setSendName(e.target.value)}
               />
             </div>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 ">
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 items-center">
+              <p>Email</p>
               <Input
                 type="email"
-                label="Email"
+                // label="Email"
                 size="lg"
                 className="border-2 border-gray-800 m-2 font-bold "
+                
                 value={sendEmail}
                 onChange={(e) => setSendEmail(e.target.value)}
               />
             </div>
-            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 ">
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 items-center">
+              <p>Subject</p>
               <Input
                 type="text"
-                label="Subject"
+                // label="Subject"
                 size="lg"
                 className="border-2 border-gray-800 m-2 font-bold "
                 value={sentSubject}
@@ -97,7 +128,7 @@ function Contact() {
             </div>
             <div className="border-2 border-gray-800 m-2 ">
             <Textarea
-              label="Message"
+              // label="Message"
               placeholder="Say hi"
               className="max-w-full font-bold "
               size="lg"
@@ -106,12 +137,15 @@ function Contact() {
             />
             </div>
             <div className="flex justify-center md:justify-end p-2 pb-2">
-            <Button color="primary"  className="xl:text-xl bg-pink-500" onClick={handelClick}>Let's Connect</Button>
+            <Button color="primary"  className="xl:text-xl bg-pink-400" onClick={handelClick}>Say Hello</Button>
             </div>
           </form>
+            {contextHolder}
+            {sucess ? success()  : null}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
