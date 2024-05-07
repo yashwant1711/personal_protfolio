@@ -1,32 +1,24 @@
 import React from 'react'
-import photo1 from "../../assets/photo1.jpg";
-
+import photo1 from '../../assets/photo1.jpg'
 
 function Aboutme() {
   return (
-    <div>
-      <div className="fourth-component p-10">
-        <h3 className="text-xl font-semibold tracking-wider">About Me</h3>
-        <div className="fourth-component-text border-2 border-gray-800 mt-5">
-          <h2 className="text-3xl font-bold p-8">Get to know me better.</h2>
-          <div className="main-bottom-area flex h-32 border-t-2 border-b-2 border-gray-800 ">
-            <div className="inner-text flex items-center p-8  border-gray-800 ">
-              <img
-                className="rounded-full"
-                src={photo1}
-                alt="img"
-                width="100px"
-                hight="100px"
-              />
-              <h3 className="text-3xl font-bold p-3">Yashwant Gurjar</h3>
-            </div>
-            <div className="border-l-2 border-gray-800 text-xl font-semibold  p-12">
-              <p>Liked by you and 6 others</p>
-              
-            </div>
-          </div>
-          <div className="main-end-area">
-            <p className="text-lg font-medium p-10 break-all">
+    <div className='m-2 md:m-8 xl:m-10'>
+      <h3 className='text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5'>About Me</h3>
+      <div className='border-2 border-gray-800'>
+        <div className='text-2xl font-extrabold p-5 md:text-3xl xl:text-3xl xl:p-8 border-b-2 border-gray-800'>
+        <h2>Get to Know me Better</h2>
+        </div>
+        <div className='flex justify-between md:justify-normal items-center border-b-2 border-gray-800 '>
+        <div className='p-2 flex items-center border-r-2 border-gray-800 xl:p-4'>
+            <img src={photo1} alt="_"  className="rounded-full drop-shadow-lg w-10 md:w-16 xl:w-24"/>
+            <h4 className='px-3 font-bold md:text-xl xl:text-2xl'>Yashwant Gurjar</h4>
+        </div>
+        <div>
+            <h4 className='px-1 font-semibold xl:text-xl xl:px-5'>Liked by you and 6 others </h4>
+        </div>
+        </div>
+        <p className="text-lg font-medium p-2 break-all xl:text-lg xl:p-10">
               Passionate about the realm of technology, I am a results-driven
               Front-end software developer with a solid background in frontend
               development. Proficient in languages such as JavaScript and
@@ -40,8 +32,6 @@ function Aboutme() {
               strategies. I find great satisfaction in conceptualizing and
               creating products, and I am committed to ensuring their success.
             </p>
-          </div>
-        </div>
       </div>
     </div>
   )

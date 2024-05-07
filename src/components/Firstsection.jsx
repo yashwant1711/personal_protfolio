@@ -1,52 +1,43 @@
 import React from "react";
-import { Button, Flex } from "antd";
-import photo1 from "../../assets/photo1.jpg";
-
-
+import { Button } from "@nextui-org/button";
+import  photo1  from "../../assets/photo1.jpg";
 function Firstsection() {
- 
   return (
     <div>
-      <div className="upper-component flex justify-between p-4 px-8">
-        <Button type="link" className="text-black text-xl" onClick={() => window.open("https://drive.google.com/file/d/1akEpixS1rLXW2AyT11CF_u8fgoDEDEVo/view?usp=drive_link")}>
-          Resume
-          
-        </Button>
-        <Flex>
-          <Button type="primary" className="bg-black text-xl pb-8" onClick={() => window.open("https://noteforms.com/forms/form-data-vumqmv")}>
-            Say Hello
-          </Button>
-        </Flex>
-      </div>
-      <div className="second-component flex  justify-around  items-center -blue-500 max-h-screen m-10 mt-24">
-        <div className="first ">
-          <p className="text-base font-normal leading-8">Hi! My name is</p>
-          <h2 className="text-7xl font-extrabold">Yaswant Gurjar</h2>
-          <p className="text-xl leading-8">
+    <div className="w-full flex justify-between p-4 ">
+      <Button color="primary" className="text-black xl:text-xl" variant="light" onClick={() => window.open("https://drive.google.com/file/d/1akEpixS1rLXW2AyT11CF_u8fgoDEDEVo/view?usp=drive_link")}>
+        Resume
+      </Button>
+      <Button color="primary" style={{ background: "black" }}  className="xl:text-xl text-white" onClick={() => window.open("https://noteforms.com/forms/form-data-vumqmv")}>Say Hello</Button>
+    </div>
+    <div className="md:flex md:justify-around  md:items-center md:max-h-screen md:m-10 md:mt-24 xl:mt-40">
+    <div className="text-center mt-5 m-5">
+    <p className="text-sm font-normal leading-8 md:text-base lg:text-xl sm:leading-8 xl:text-2xl">Hi! My name is</p>
+          <h2 className="text-3xl font-extrabold md:text-5xl lg:text-6xl xl:text-7xl">Yaswant Gurjar</h2>
+          <p className="text-lg leading-8 md:text-xl xl:text-2xl">
             I'm a <span className="font-bold"> Frontend Web Developer </span>
           </p>
-          <p className="text-xl font-semibold">gurjaryash00@gmail.com</p>
-        </div>
-        <div className="second  border-green-500">
-          <img
+          <p className="text-xl font-semibold md:text-xl">gurjaryash00@gmail.com</p>
+    </div>
+    <div className=" m-5 mt-2 flex items-center justify-center">
+    <img
             src={photo1}
-            width={"250px"}
-            hight={"250px"}
             className="rounded-full drop-shadow-lg"
+            width={"180px"}
+            height={"180px"}
           />
-        </div>
-      </div>
-      <div className="third-component_socials mt-36">
-        <div className="inline-flex items-center justify-center w-full">
+    </div>
+    </div>
+    <div className="inline-flex items-center justify-center w-full xl:mt-20">
           <hr className="w-10/12 h-1 my-8  border-0 rounded bg-gray-700" />
-          <div className=" absolute px-5 -translate-x-1/2 bg-white left-1/2 flex justify-center items-center">
+          <div className=" absolute px-2 -translate-x-1/2 bg-white left-1/2 flex justify-center items-center">
             <a href="https://www.instagram.com/yashgurjar1711?igsh=eWIyNTZpc28yOGV3" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="48"
-                height="40"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
                 Xlink="http://www.w3.org/1999/xlink"
               >
@@ -58,8 +49,8 @@ function Firstsection() {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="50"
-              height="50"
+              width="40"
+              height="40"
               viewBox="0 0 32 32"
             >
               <path d="M 7.5 5 C 6.132813 5 5 6.132813 5 7.5 L 5 24.5 C 5 25.867188 6.132813 27 7.5 27 L 24.5 27 C 25.867188 27 27 25.867188 27 24.5 L 27 7.5 C 27 6.132813 25.867188 5 24.5 5 Z M 7.5 7 L 24.5 7 C 24.785156 7 25 7.214844 25 7.5 L 25 24.5 C 25 24.785156 24.785156 25 24.5 25 L 7.5 25 C 7.214844 25 7 24.785156 7 24.5 L 7 7.5 C 7 7.214844 7.214844 7 7.5 7 Z M 10.4375 8.71875 C 9.488281 8.71875 8.71875 9.488281 8.71875 10.4375 C 8.71875 11.386719 9.488281 12.15625 10.4375 12.15625 C 11.386719 12.15625 12.15625 11.386719 12.15625 10.4375 C 12.15625 9.488281 11.386719 8.71875 10.4375 8.71875 Z M 19.46875 13.28125 C 18.035156 13.28125 17.082031 14.066406 16.6875 14.8125 L 16.625 14.8125 L 16.625 13.5 L 13.8125 13.5 L 13.8125 23 L 16.75 23 L 16.75 18.3125 C 16.75 17.074219 16.996094 15.875 18.53125 15.875 C 20.042969 15.875 20.0625 17.273438 20.0625 18.375 L 20.0625 23 L 23 23 L 23 17.78125 C 23 15.226563 22.457031 13.28125 19.46875 13.28125 Z M 9 13.5 L 9 23 L 11.96875 23 L 11.96875 13.5 Z"></path>
@@ -70,8 +61,8 @@ function Firstsection() {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="50"
-              height="50"
+              width="40"
+              height="40"
               viewBox="0 0 48 48"
             >
               <linearGradient
@@ -105,8 +96,8 @@ function Firstsection() {
             </a>
           </div>
         </div>
-      </div>
     </div>
+   
   );
 }
 

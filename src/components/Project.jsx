@@ -1,98 +1,121 @@
-import React from 'react'
-import { Button, Flex } from "antd";
+import React from "react";
 import prettier from "../../assets/prettier2.png";
 import project1 from "../../assets/project1img.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
-function Project() {
+import { Button } from "@nextui-org/button";
+
+function Projects() {
   return (
-    <div>
-       <div className="sixth_component_project p-8">
-        <h3 className="text-xl font-semibold tracking-wider ">PROJECTS</h3>
-        <div className="sixth_component_project_main border-2 border-gray-800 mt-5 ">
-          <h2 className="sixth_component_project_text border-b-2 border-gray-800 text-3xl font-bold p-8">
-            Take a look what I've been working on.
-          </h2>
-          <div className="sixth_component_project_images">
-            <div className="image ">
-              <img src={prettier} alt="" width={"auto"} />
-            </div>
+    <>
+      <div className="m-2 md:m-8 xl:m-10">
+        <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
+          PROJECTS
+        </h3>
+        <div className="border-2 border-gray-800">
+          <div className="text-2xl font-extrabold p-5 md:text-3xl xl:text-3xl xl:p-8 border-b-2 border-gray-800">
+            <h2>Take a look what I'm working on.</h2>
+          </div>
+          <div>
+            <img src={prettier} alt="" />
           </div>
         </div>
       </div>
-      <div className="seventh_components first_ptoject p-8">
-        <h3 className="text-xl font-semibold tracking-wider">01.</h3>
-        <div className="senvth_component  border-2 border-gray-800 mt-5 ">
-          <div className="senvth_component_heading border-b-2 border-gray-800 flex  items-center justify-between p-8">
-            <h2 className="senvth_component_text    text-3xl font-bold ">
-              Calacs
-            </h2>
-            <div className="buttons flex items-center">
-              <Button type="link" className="text-black text-xl">
+
+
+      <div className="m-2 md:m-8 xl:m-10">
+        <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
+          01.
+        </h3>
+        <div className="border-2 border-gray-800">
+          <div className="text-2xl font-extrabold md:text-3xl xl:text-3xl  border-b-2 border-gray-800">
+            <div className="flex justify-between items-center border-b-2 border-gray-800 p-5">
+            <h2>Calcas.</h2>
+            <div>
+              <Button
+                color="primary"
+                className="text-black xl:text-xl"
+                variant="light"
+              >
                 code
               </Button>
-              <Flex>
-                <Button type="primary" className="bg-black text-xl px-5 py-0.5">
-                  Visit
-                </Button>
-              </Flex>
+              <Button
+                color="primary"
+                className="xl:text-xl text-white bg-black" >
+                Visit
+              </Button>
             </div>
-          </div>
-          <div className="senvth_component_images">
-            <img src={project1} alt="_" width={"75%"} className="m-auto" />
+            </div>
+            <div>
+                <img src={project1} alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="seventh_components first_ptoject p-8">
-        <h3 className="text-xl font-semibold tracking-wider ">02.</h3>
-        <div className="senvth_component  border-2 border-gray-800 mt-5">
-          <div className="senvth_component_heading border-b-2 border-gray-800 flex  items-center justify-between p-8">
-            <h2 className="senvth_component_text    text-3xl font-bold ">
-              Response.AI
-            </h2>
-            <div className="buttons flex items-center">
-              <Button type="link" className="text-black text-xl">
+
+      <div className="m-2 md:m-8 xl:m-10">
+        <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
+          02.
+        </h3>
+        <div className="border-2 border-gray-800">
+          <div className="text-sm font-extrabold md:text-3xl xl:text-3xl  border-b-2 border-gray-800">
+            <div className="flex justify-between items-center border-b-2 border-gray-800 p-5">
+            <h2>Response.AI.</h2>
+            <div>
+              <Button
+                color="primary"
+                className="text-black xl:text-xl"
+                variant="light"
+              >
                 code
               </Button>
-              <Flex>
-                <Button type="primary" className="bg-black text-xl px-5 py-0.5">
-                  Visit
-                </Button>
-              </Flex>
+              <Button
+                color="primary"
+                className="xl:text-xl text-white bg-black " >
+                Visit
+              </Button>
+            </div>
+            </div>
+            <div className="p-5">
+                <img src={project2} alt="" />
             </div>
           </div>
-          <div className="senvth_component_images">
-            <img src={project2} alt="_" width={"75%"} className="m-auto" />
-          </div>
-         
         </div>
       </div>
-      <div className="seventh_components first_ptoject p-8">
-        <h3 className="text-xl font-semibold tracking-wider">03.</h3>
-        <div className="senvth_component  border-2 border-gray-800 mt-5">
-          <div className="senvth_component_heading border-b-2 border-gray-800 flex  items-center justify-between p-8">
-            <h2 className="senvth_component_text    text-3xl font-bold ">
-              Personal Portfolio
-            </h2>
-            <div className="buttons flex items-center ">
-              <Button type="link" className="text-black text-xl">
+
+      
+      <div className="m-2 md:m-8 xl:m-10">
+        <h3 className="text-xl font-semibold text-center md:text-start pb-2 xl:text-2xl xl:pb-5">
+          03.
+        </h3>
+        <div className="border-2 border-gray-800">
+          <div className="text-sm font-extrabold md:text-3xl xl:text-3xl  border-b-2 border-gray-800">
+            <div className="flex justify-between items-center border-b-2 border-gray-800 p-5">
+            <p>Personal Portfolio.</p>
+            <div>
+              <Button
+                color="primary"
+                className="text-black xl:text-xl"
+                variant="light"
+              >
                 code
               </Button>
-              <Flex>
-                <Button type="primary" className="bg-black  text-xl px-5 py-0.5">
-                  Visit
-                </Button>
-              </Flex>
+              <Button
+                color="primary"
+                style={{ background: "black" }}
+                className="xl:text-xl text-white bg-black" >
+                Visit
+              </Button>
+            </div>
+            </div>
+            <div className="p-5">
+                <img src={project3} alt="" />
             </div>
           </div>
-          <div className="senvth_component_images">
-            <img src={project3} alt="_" width={"75%"} className="m-auto" />
-          </div>
-          
         </div>
       </div>
-    </div>
-  )
+    </>
+  );
 }
 
-export default Project
+export default Projects;
